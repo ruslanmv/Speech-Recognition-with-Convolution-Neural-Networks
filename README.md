@@ -47,7 +47,7 @@ One dimensions you can have the wave form like the following.
 
 ![](assets/images/posts/README/wavenet.gif)
 
-You can download python code here.
+You can download python code [here.](https://github.com/ruslanmv/Speech-Recognition-with-Convolution-Neural-Networks/blob/master/waveform.ipynb)
 
 ## RNN vs CNN
 
@@ -123,7 +123,7 @@ In pure mathematical terms, a convolution represents the blending of two functio
 
 ![](assets/images/posts/README/convgaus.gif)
 
-Fig. Convolution of two functions, f and g.
+**Fig. Convolution of two functions, f and g.**
 
 Convolution is performed by sliding a small array of numbers, typically a matrix of size [nxm] sequentially over different portions of the picture. 
 
@@ -461,20 +461,8 @@ plt.hist(np.array(duration_of_recordings))
 ```
 
 
-
-
-    (array([1.5000e+01, 3.0000e+01, 4.4000e+01, 1.3800e+02, 1.3600e+02,
-            1.7900e+02, 3.6600e+02, 4.3400e+02, 5.9300e+02, 2.1747e+04]),
-     array([0.418 , 0.4762, 0.5344, 0.5926, 0.6508, 0.709 , 0.7672, 0.8254,
-            0.8836, 0.9418, 1.    ]),
-     <a list of 10 Patch objects>)
-
-
-
-
-​    
 ![png](assets/images/posts/README/Speech-Recognition-with-Convolution-Neural-Networks_38_1.png)
-​    
+    
 
 
 # Preprocessing the audio waves
@@ -542,8 +530,6 @@ x_tr, x_val, y_tr, y_val = train_test_split(x_tr, y_tr, test_size=0.2, random_st
 #Print the shapes
 x_tr.shape, X_test.shape, x_val.shape, len(y_tr), len(y_test), len(y_val)
 ```
-
-
 
 
     ((13639, 8000), (4263, 8000), (3410, 8000), 13639, 4263, 3410)
@@ -869,8 +855,6 @@ plt.ylabel('Label')
 
 
     Text(69.0, 0.5, 'Label')
-
-
 
 
 ![png](assets/images/posts/README/Speech-Recognition-with-Convolution-Neural-Networks_81_1.png)
